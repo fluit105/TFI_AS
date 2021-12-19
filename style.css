@@ -6,6 +6,10 @@ body{
     padding: 0;
 }
 
+img {
+    border-radius: 20px;
+}
+
 header{
     color: black;
     margin: 10px;
