@@ -13,13 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
 
-    <title>Presentacion del TFI</title>
+    <title>Presentación del TFI</title>
 </head>
 <body>
     <nav id="navbar">
-        <header>TFI</header>
+        <header>Trabajo Final Integrador</header>
         <ul>
-            <li><a class="nav-link" href="#introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#introduccion">Introducción</a></li>
             <li><a class="nav-link" href="#Why_use_C++?">Why use C++?</a></li>
             <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
             <li><a class="nav-link" href="#Variables">Variables</a></li>
@@ -27,22 +27,31 @@
             <li><a class="nav-link" href="#Display_variables">Display variables</a></li>
             <li><a class="nav-link" href="#C++_comments">C++ comments</a></li>
             <li><a class="nav-link" href="#C++_operators">C++ operators</a></li>
-
-
         </ul>
     </nav>
     <main id="main-doc">
-
-        <section class="main-section" id="Introduction"><header>Introduction</header>
-            <p class="desc">
-                C++ is a cross-platform language that can be used to create high-performance applications.
-                C++ was developed by Bjarne Stroustrup, as an extension to the C language.
-                C++ gives programmers a high level of control over system resources and memory.
-                The language was updated 3 major times in 2011, 2014, and 2017 to C++11, C++14, and C++17.
+        <section class="main-section" id="introduccion">
+            <img src="Logo.jpg" width="150" height="120" />
+            <header><strong>Introducción</strong></header>
+            <p>
+                <strong>Docentes: </strong>
+                Ing. Liliana del Prado y Mg. Silvana Marsiglia <br /><br />
+                <strong>Materia: </strong>
+                Análisis de Sistemas <br /><br />
+                <strong>Año: </strong>2020 <br /><br />
+                <strong>Comisión: </strong>2K1 <br /><br />
+                <strong>Miembros: </strong><br />
+                <ul>
+                    <li>Molina Navarro Juan Martin - 52640</li>
+                    <li>Mercado Remis Jorge Augusto - 52340</li>
+                    <li>Zossi Juan Matías - 122458</li>
+                    <li>Valdez Santiago - 52676</li>
+                </ul>
             </p>
         </section>
 
-        <section class="main-section" id="Why_use_C++?"><header>Why use C++?</header>
+        <section class="main-section" id="Why_use_C++?">
+            <header>Why use C++?</header>
             <p class="desc">
                 C++ is one of the world's most popular programming languages.<br>
                 C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.
@@ -53,25 +62,29 @@
             </p>
         </section>
 
-        <section class="main-section" id="Hello_world"><header>Hello world</header>
+        <section class="main-section" id="Hello_world">
+            <header>Hello world</header>
             <p class="desc">
                 Let's create our first C++ file.
                 Open Codeblocks and go to File > New > Empty File.
                 Write the following C++ code and save the file as myfirstprogram.cpp (File > Save File as):
             </p>
-           
-             <code>#include < iostream >
+
+            <code>
+                #include < iostream >
                 using namespace std;
-                
+
                 int main() {
-                  cout << "Hello World!";
-                  return 0;
-                }</code>
-          
+                cout << "Hello World!";
+                return 0;
+                }
+            </code>
+
         </section>
- 
-        <section class="main-section" id="Variables"><header>Variables</header>
-            <p  class="desc">
+
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p class="desc">
                 Variables are containers for storing data values.
                 In C++, there are different types of variables (defined with different keywords), for example:
             </p>
@@ -84,68 +97,82 @@
             </ul>
         </section>
 
-        <section class="main-section" id="Declaring_variables"><header>Declaring variables</header>
+        <section class="main-section" id="Declaring_variables">
+            <header>Declaring variables</header>
             <p class="desc">
                 To create a variable, specify the type and assign it a value:
             </p>
             <code>type variableName = value;</code>
             <p class="desc">
-                Where type is one of C++ types (such as int), and variableName is the name of the variable (such as x or myName). 
+                Where type is one of C++ types (such as int), and variableName is the name of the variable (such as x or myName).
                 The equal sign is used to assign values to the variable.
                 To create a variable that should store a number, look at the following example:
             </p>
-            <code>int myNum = 15;
-                cout << myNum;</code>
-          
+            <code>
+                int myNum = 15;
+                cout << myNum;
+            </code>
+
         </section>
 
-        <section class="main-section" id="Display_variables"> <header>Display variables</header>
-        <p>
-            The cout object is used together with the << operator to display variables.
-            To combine both text and a variable, separate them with the << operator:
-        </p>
-        <code>int myAge = 35;
-            cout << "I am " << myAge << " years old.";</code>
+        <section class="main-section" id="Display_variables">
+            <header>Display variables</header>
+            <p>
+                The cout object is used together with the << operator to display variables.
+                To combine both text and a variable, separate them with the << operator:
+            </p>
+            <code>
+                int myAge = 35;
+                cout << "I am " << myAge << " years old.";
+            </code>
         </section>
 
-        <section class="main-section" id="C++_comments"><header>C++ comments</header>
-        <p>
-            Comments can be used to explain C++ code, and to make it more readable. 
-            It can also be used to prevent execution when testing alternative code. Comments can be singled-lined or multi-lined.
-        </p>
-        <p>
-            Single-line comments start with two forward slashes (//).
-            Any text between // and the end of the line is ignored by the compiler (will not be executed).
-            This example uses a single-line comment before a line of code:
-        </p>
-        <code>// This is a comment
-            cout << "Hello World!";</code>
-        <p>
-            This example uses a single-line comment at the end of a line of code:
-        </p>
-        <code>cout << "Hello World!"; // This is a comment</code>
-        <p>
-            Multi-line comments start with /* and ends with */.
-            Any text between /* and */ will be ignored by the compiler:
-        </p>
-        <code>/* The code below will print the words Hello World!
-            to the screen, and it is amazing */
-            cout << "Hello World!";</code>
+        <section class="main-section" id="C++_comments">
+            <header>C++ comments</header>
+            <p>
+                Comments can be used to explain C++ code, and to make it more readable.
+                It can also be used to prevent execution when testing alternative code. Comments can be singled-lined or multi-lined.
+            </p>
+            <p>
+                Single-line comments start with two forward slashes (//).
+                Any text between // and the end of the line is ignored by the compiler (will not be executed).
+                This example uses a single-line comment before a line of code:
+            </p>
+            <code>
+                // This is a comment
+                cout << "Hello World!";
+            </code>
+            <p>
+                This example uses a single-line comment at the end of a line of code:
+            </p>
+            <code>cout << "Hello World!"; // This is a comment</code>
+            <p>
+                Multi-line comments start with /* and ends with */.
+                Any text between /* and */ will be ignored by the compiler:
+            </p>
+            <code>
+                /* The code below will print the words Hello World!
+                to the screen, and it is amazing */
+                cout << "Hello World!";
+            </code>
         </section>
 
-        <section class="main-section" id="C++_operators"><header>C++ operators</header>
-        <p>
-            Operators are used to perform operations on variables and values.
-            In the example below, we use the + operator to add together two values:
-        </p>
-        <code>int x = 100 + 50;</code>
-        <p>
-            Although the + operator is often used to add together two values, like in the example above, 
-            it can also be used to add together a variable and a value, or a variable and another variable:
-        </p>
-        <code>int sum1 = 100 + 50; // 150
-            int sum2 = sum1 + 250; // 400
-            int sum3 = sum2 + sum2; // 800</code>
+        <section class="main-section" id="C++_operators">
+            <header>C++ operators</header>
+            <p>
+                Operators are used to perform operations on variables and values.
+                In the example below, we use the + operator to add together two values:
+            </p>
+            <code>int x = 100 + 50;</code>
+            <p>
+                Although the + operator is often used to add together two values, like in the example above,
+                it can also be used to add together a variable and a value, or a variable and another variable:
+            </p>
+            <code>
+                int sum1 = 100 + 50; // 150
+                int sum2 = sum1 + 250; // 400
+                int sum3 = sum2 + sum2; // 800
+            </code>
         </section>
 
     </main>
