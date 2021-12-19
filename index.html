@@ -20,18 +20,15 @@
         <header>Trabajo Final Integrador</header>
         <ul>
             <li><a class="nav-link" href="#introduccion">Introducción</a></li>
-            <li><a class="nav-link" href="#Why_use_C++?">Why use C++?</a></li>
-            <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
-            <li><a class="nav-link" href="#Variables">Variables</a></li>
-            <li><a class="nav-link" href="#Declaring_variables">Declaring variables</a></li>
-            <li><a class="nav-link" href="#Display_variables">Display variables</a></li>
-            <li><a class="nav-link" href="#C++_comments">C++ comments</a></li>
-            <li><a class="nav-link" href="#C++_operators">C++ operators</a></li>
+            <li><a class="nav-link" href="#etapa1">Etapa 1</a></li>
+            <li><a class="nav-link" href="#etapa2">Etapa 2</a></li>
+            <li><a class="nav-link" href="#etapa3">Etapa 3</a></li>
+            <li><a class="nav-link" href="#anexos">Anexos</a></li>
         </ul>
     </nav>
     <main id="main-doc">
         <section class="main-section" id="introduccion">
-            <img src="Logo.jpg" width="150" height="120" />
+            <img src="files/Logo.jpg" width="150" height="120" />
             <header><strong>Introducción</strong></header>
             <p>
                 <strong>Docentes: </strong>
@@ -48,131 +45,31 @@
                     <li>Valdez Santiago - 52676</li>
                 </ul>
             </p>
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         </section>
 
-        <section class="main-section" id="Why_use_C++?">
-            <header>Why use C++?</header>
-            <p class="desc">
-                C++ is one of the world's most popular programming languages.<br>
-                C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.
-                C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.
-                C++ is portable and can be used to develop applications that can be adapted to multiple platforms.
-                C++ is fun and easy to learn!
-                As C++ is close to C# and Java, it makes it easy for programmers to switch to C++ or vice versa
-            </p>
+        <section class="main-section" id="etapa1">
+            <header><strong>Etapa 1</strong></header>
+            <a href="https://www.qries.com/">
+                <img src="files/capETP1.jpg"
+                     width="386" height="275">
+            </a>
         </section>
 
-        <section class="main-section" id="Hello_world">
-            <header>Hello world</header>
-            <p class="desc">
-                Let's create our first C++ file.
-                Open Codeblocks and go to File > New > Empty File.
-                Write the following C++ code and save the file as myfirstprogram.cpp (File > Save File as):
-            </p>
-
-            <code>
-                #include < iostream >
-                using namespace std;
-
-                int main() {
-                cout << "Hello World!";
-                return 0;
-                }
-            </code>
+        <section class="main-section" id="etapa2">
+            <header><strong>Etapa 2</strong></header>
 
         </section>
 
-        <section class="main-section" id="Variables">
-            <header>Variables</header>
-            <p class="desc">
-                Variables are containers for storing data values.
-                In C++, there are different types of variables (defined with different keywords), for example:
-            </p>
-            <ul>
-                <li>int - stores integers (whole numbers), without decimals, such as 123 or -123</li>
-                <li>double - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
-                <li>char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
-                <li>string - stores text, such as "Hello World". String values are surrounded by double quotes</li>
-                <li>bool - stores values with two states: true or false</li>
-            </ul>
-        </section>
-
-        <section class="main-section" id="Declaring_variables">
-            <header>Declaring variables</header>
-            <p class="desc">
-                To create a variable, specify the type and assign it a value:
-            </p>
-            <code>type variableName = value;</code>
-            <p class="desc">
-                Where type is one of C++ types (such as int), and variableName is the name of the variable (such as x or myName).
-                The equal sign is used to assign values to the variable.
-                To create a variable that should store a number, look at the following example:
-            </p>
-            <code>
-                int myNum = 15;
-                cout << myNum;
-            </code>
+        <section class="main-section" id="etapa3">
+            <header><strong>Etapa 3</strong></header>
 
         </section>
 
-        <section class="main-section" id="Display_variables">
-            <header>Display variables</header>
-            <p>
-                The cout object is used together with the << operator to display variables.
-                To combine both text and a variable, separate them with the << operator:
-            </p>
-            <code>
-                int myAge = 35;
-                cout << "I am " << myAge << " years old.";
-            </code>
-        </section>
+        <section class="main-section" id="anexos">
+            <header><strong>Anexos</strong></header>
 
-        <section class="main-section" id="C++_comments">
-            <header>C++ comments</header>
-            <p>
-                Comments can be used to explain C++ code, and to make it more readable.
-                It can also be used to prevent execution when testing alternative code. Comments can be singled-lined or multi-lined.
-            </p>
-            <p>
-                Single-line comments start with two forward slashes (//).
-                Any text between // and the end of the line is ignored by the compiler (will not be executed).
-                This example uses a single-line comment before a line of code:
-            </p>
-            <code>
-                // This is a comment
-                cout << "Hello World!";
-            </code>
-            <p>
-                This example uses a single-line comment at the end of a line of code:
-            </p>
-            <code>cout << "Hello World!"; // This is a comment</code>
-            <p>
-                Multi-line comments start with /* and ends with */.
-                Any text between /* and */ will be ignored by the compiler:
-            </p>
-            <code>
-                /* The code below will print the words Hello World!
-                to the screen, and it is amazing */
-                cout << "Hello World!";
-            </code>
-        </section>
-
-        <section class="main-section" id="C++_operators">
-            <header>C++ operators</header>
-            <p>
-                Operators are used to perform operations on variables and values.
-                In the example below, we use the + operator to add together two values:
-            </p>
-            <code>int x = 100 + 50;</code>
-            <p>
-                Although the + operator is often used to add together two values, like in the example above,
-                it can also be used to add together a variable and a value, or a variable and another variable:
-            </p>
-            <code>
-                int sum1 = 100 + 50; // 150
-                int sum2 = sum1 + 250; // 400
-                int sum3 = sum2 + sum2; // 800
-            </code>
         </section>
 
     </main>
